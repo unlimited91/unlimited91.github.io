@@ -4,7 +4,7 @@ title: "Primer on Elliptic Curve Math"
 date: 2026-01-03
 ---
 
-I'm pretty sure many of you have used asymmetric cryptography in various ways. More often than not, it's a requirement for a project, and we think, "Yeah, there's this neat trick to ensure point-to-point encryption." The feature gets written, tested, and deployed. Non-technical folks are super happy, and we're like, "Yeah, whatever," and move on to the next project. But I'm sure a lot of us have never bothered to understand what's happening under the hood, especially the math behind Elliptic Curve Cryptography. I understand this is a slippery slope, and I'm by no means an expert, but I've tried some tinkering and even taken a few math classes. Today, this is going to be an extremely high-level overview. If I get more time, I'll try to document my learnings in detail and, of course, get feedback.
+I'm pretty sure many of you have used asymmetric cryptography in various ways. More often than not, it's a requirement for a project, and we think, "Yeah, there's this neat trick to ensure point-to-point encryption." The feature gets written, tested, and deployed. We're like, "Yeah, whatever," and move on to the next project. But I'm sure a lot of us have never bothered to understand what's happening under the hood, especially the math behind Elliptic Curve Cryptography. I understand this is a slippery slope, and I'm by no means an expert, but I've tried some tinkering :). Today this is going to be an extremely high-level overview.
 
 ## Now let's begin
 
@@ -143,7 +143,7 @@ print("Apub:", validate_point(Apub))
 print("Bpub:", validate_point(Bpub))
 
 Backend_A_Shared_Key = dA * Bpub   # (Private Key of Backend A) * (Public Key of Backend B)
-Backend_A_Shared_Key = dB * Apub   # (Private Key of Backend B) * (Public Key of Backend A)
+Backend_B_Shared_Key = dB * Apub   # (Private Key of Backend B) * (Public Key of Backend A)
 
-print("K_server", Backend_A_Shared_Key)
-print("K_client", Backend_A_Shared_Key) # you'll see both of them are the same```
+print("Backed A derived shared key", Backend_A_Shared_Key)
+print("Backed B derived shared key", Backend_B_Shared_Key) # you'll see both of them are the same```

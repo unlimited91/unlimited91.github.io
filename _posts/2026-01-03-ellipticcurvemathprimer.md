@@ -146,4 +146,5 @@ Backend_A_Shared_Key = dA * Bpub   # (Private Key of Backend A) * (Public Key of
 Backend_B_Shared_Key = dB * Apub   # (Private Key of Backend B) * (Public Key of Backend A)
 
 print("Backed A derived shared key", Backend_A_Shared_Key)
-print("Backed B derived shared key", Backend_B_Shared_Key) # you'll see both of them are the same```
+print("Backed B derived shared key", Backend_B_Shared_Key) # you'll see both of them are the same
+```

@@ -98,7 +98,7 @@ This produces cryptographically uniform key material.
 
 For the astute ones let's write a quick python script and validate it on sagemath
 
-Open Sagemath (https://sagecell.sagemath.org/) and just copy the following python script. I have the script pretty self explanatory.
+Open Sagemath [https://sagecell.sagemath.org/](https://sagecell.sagemath.org/) and just copy the following python script. I have the script pretty self explanatory.
 
 ```python
 p  = 0xffffffff00000001000000000000000000000000ffffffffffffffffffffffff
